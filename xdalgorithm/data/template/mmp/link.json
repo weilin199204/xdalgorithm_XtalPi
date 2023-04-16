@@ -1,0 +1,18 @@
+{
+    "run_type": "mmp_link",
+    "mol_1": "COc1ccc2c(c1)NCCC2",
+    "mol_2": "C[C@@H]1CC(=O)Nc2ccccc2N1",
+    "logging_path": "/logging.log",
+    "output_smiles_path": "/mmp_link/output/path/output_smiles.smi",
+    "radius": 1,
+    "min_atoms": 6,
+    "max_atoms": 10,
+    "max_replacements": null,
+    "min_freq": 0,
+    "ncores": 1,
+    "dist": [4, 6],
+    "replace_ids_1": [8],
+    "replace_ids_2": [10],
+    "protected_ids_1": null,
+    "protected_ids_2": null
+}

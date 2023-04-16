@@ -1,0 +1,14 @@
+{
+    "logging": {
+        "logging_path": "/absolute/path/to/log/directory.log"
+    },
+    "parameters": {
+        "aff_col": "pX",
+        "input_new_csv": "/absolute/path/of/new/dataset.csv",
+        "input_old_csv": "/absolute/path/of/old/dataset.csv",
+        "small_unit_size": 1,
+        "split_fused_ring": false,
+        "work_dir": "/absolute/path/to/save/output/in/this/directory"
+    },
+    "run_type": "update_scaffold_network"
+}

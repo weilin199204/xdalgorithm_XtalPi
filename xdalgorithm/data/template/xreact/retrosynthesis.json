@@ -1,0 +1,9 @@
+{
+    "run_type": "xreact_retrosynthesis",
+    "start_smiles": "NS(=O)(=O)c1ccc(Nc2nc(c3cccc(c3)c4ccccc4)c5nc[nH]c5n2)cc1",
+    "core_smiles": "c1ncc2nc[nH]c2n1",
+    "core_single_reactive_center": true,
+    "core_specific": true,
+    "db_path": "/data/aidd-server/xreact_reactions",
+    "logging_path": "/logging/diretory/saving/json/imgs"
+}

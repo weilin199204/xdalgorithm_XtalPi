@@ -1,0 +1,15 @@
+{"run_type": "inter_molecule_ifp_clustering",
+ "parameters":
+    {
+     "protein_ligand_conf_csv": "protein_ligand_conf.csv",
+     "ligand_resname": "MOL",
+     "include_general_contacts": false,
+     "ifp_clustering_type": "rgroup",
+     "core_smarts_string": "[#6&R]1:&@[#6&R]:&@[#7&R]:&@[#6&R](:&@[#6&R](:&@[#6&R]:&@1)-&!@[#6&R]1:&@[#7&R]:&@[#6&R]2:&@[#6&R](:&@[#7&R]:&@1-&!@[#6&R]1:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@1):&@[#7,#6;R]:&@[#6&R]:&@[#6,#7;R]:&@[#6&R]:&@2)-&!@[*&!R]",
+     "metric": "jaccard",
+     "cluster_method": "ward",
+     "cluster_cutoff": null,
+     "cluster_criterion": "distance",
+     "working_dir": "."
+    }
+}

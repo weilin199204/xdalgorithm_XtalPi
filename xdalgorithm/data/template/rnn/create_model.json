@@ -1,0 +1,53 @@
+{
+  "version": "2.0",
+  "run_type": "create_model",
+  "create_parameters": {
+    "output_model_path": "path/to/empty_model.prior",
+    "input_smiles_path": "demo_dataset.smi",
+    "num_layers": 3,
+    "layer_size": 512,
+    "cell_type": "lstm",
+    "embedding_layer_size": 256,
+    "dropout": 0,
+    "max_sequence_length": 256,
+    "layer_normalization": false,
+    "standardize": 0
+  },
+  "tl_parameters": {
+    "input_model_path": "path/to/empty_model.prior",
+    "output_model_path": "path/to/created_model.prior",
+    "input_smiles_path": "path/to/demo_dataset.smi",
+    "save_every_n_epochs": 1,
+    "batch_size": 128,
+    "clip_gradient_norm": 1.0,
+    "num_epochs": 5,
+    "starting_epoch": 1,
+    "shuffle_each_epoch": 1,
+    "collect_stats_frequency": 1,
+    "standardize": true,
+    "randomize": true,
+    "max_heavy_atoms": 70,
+    "min_heavy_atoms": 2,
+    "adaptive_lr_config": {
+      "mode": "constant",
+      "gamma": 0.8,
+      "step": 1,
+      "start": 5E-4,
+      "min": 1E-5,
+      "threshold": 1E-4,
+      "average_steps": 4,
+      "patience": 8,
+      "restart_value": 1E-5,
+      "sample_size": 100,
+      "restart_times": 0
+    }
+  },
+  "logging": {
+    "sender": "this is relevant for remote job submission scenario",
+    "recipient": "local",
+    "logging_path": "path/of/create_demo.log",
+    "job_name": "new_model",
+    "use_weights": 0,
+    "job_id": "job_id"
+  }
+}

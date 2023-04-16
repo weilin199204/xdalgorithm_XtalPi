@@ -1,0 +1,14 @@
+{
+    "logging": {
+        "logging_path": "/absolute/path/to/log/directory.log"
+    },
+    "parameters": {
+        "graphs": [
+            "/absolute/path/of/graph/pickle/file1.pickle",
+            "/absolute/path/of/graph/pickle/file2.pickle"
+        ],
+        "query_smiles": "c1cncc(-c2nc3ccc(-c4cc5ccccc5o4)nc3n2-c2ccc(C3CCC3)cc2)c1",
+        "work_dir": "/absolute/path/to/save/output/in/this/directory"
+    },
+    "run_type": "query_node_to_source_path_by_murcko_scaffold"
+}

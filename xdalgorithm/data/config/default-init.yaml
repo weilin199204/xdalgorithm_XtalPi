@@ -1,0 +1,12 @@
+idc:
+  host: 172.23.50.10
+  port: 4000
+  root: /data/corp/%s/xdkit_workspace
+cli:
+  ENV_ROOT_PATH: /data/aidd-server
+  ENV_LD_LIBRARY_PATH: /data/aidd-server/Modules/mgltools_x86_64Linux2_1.5.6/lib
+  ENV_MGLPY: /data/aidd-server/Modules/mgltools_x86_64Linux2_1.5.6/bin/python
+  ENV_MGLUTIL: /data/aidd-server/Modules/mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24
+  ENV_JAVA_HOME: /data/aidd-server/jdk-14.0.2
+  ENV_MODULE_INCLUDE_PATH: /data/aidd-server/Modules
+  ENV_KEY_MODELLER: MODELIRANJE

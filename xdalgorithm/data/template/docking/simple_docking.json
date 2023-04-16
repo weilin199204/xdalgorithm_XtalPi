@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "run_type": "ligand_dock",
+  "parameters": {
+    "input_ligands": "ligand_dock_path/ligands.smi",
+    "input_protein_list": [
+      "/path/prepared_protein_1.pdb",
+      "/path/prepared_protein_2.pdb"],
+    "work_dir": "/docking/result/will/be/saved/in/this/directory",
+    "n_cpu": 3,
+    "skip_ligPrep": false,
+    "ignore": 3,
+    "max_saved_poses": 3,
+    "energy_cutoff": 2.0,
+    "rmsd_cutoff": 2.0,
+    "center_x": 0.0,
+    "center_y": 0.0,
+    "center_z": 0.0,
+    "n_poses": 20,
+    "hb": [
+      ["ASN85-OD1", "ASN85-ND2"],
+      ["ASN90-OD1", "ASN90-ND2"]
+    ],
+    "prot": true,
+  },
+  "logging": {
+    "sender": "this is relevant for remote job submission scenario",
+    "recipient": "local",
+    "logging_path": "./ligand_dock.log",
+    "job_name": "ligand_dock"},
+  "jobType": "ligand_dock",
+}

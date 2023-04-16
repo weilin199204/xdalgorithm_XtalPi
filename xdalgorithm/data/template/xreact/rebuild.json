@@ -1,0 +1,22 @@
+{
+	"bb_dict": {
+		"aryl_vinyl_halides/suzuki.smi": "input/filtering.smi",
+		"primary_secondary_amines/amination-1.smi": "rep_mols.smi"
+	}, 
+	"core_smiles": "c1ncc2nc[nH]c2n1", 
+	"route": [
+				"suzuki",
+			  	"NS(=O)(=O)c1ccc(Nc2nc(c3cccc(c3)c4ccccc4)c5nc[nH]c5n2)cc1",
+		      	"Brc1cccc(-c2ccccc2)c1",
+				[
+				   	"amination-1",
+					"NS(=O)(=O)c1ccc(Nc2nc(B(O)O)c3nc[nH]c3n2)cc1",
+					"OB(O)c1nc(Br)nc2[nH]cnc12",
+					"Nc1ccc(S(N)(=O)=O)cc1"
+				]
+		], 
+	"logging_path": "rebuild_logging.log",
+	"output_path": "output/smiles/file/path.smi",
+	"run_type": "xreact_rebuild",
+	"db_path": "/data/aidd-server/Building_blocks_sorted_by_reactions/../xreact_reactions",
+	"jobType": "xreact_rebuild"}

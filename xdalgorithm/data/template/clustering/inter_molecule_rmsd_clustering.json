@@ -1,0 +1,11 @@
+{"run_type": "inter_molecule_rmsd_clustering",
+ "parameters":
+    {
+     "protein_ligand_conf_csv": "protein_ligand_conf.csv",
+     "core_smarts_string": "[#6&R]1:&@[#6&R]:&@[#7&R]:&@[#6&R](:&@[#6&R](:&@[#6&R]:&@1)-&!@[#6&R]1:&@[#7&R]:&@[#6&R]2:&@[#6&R](:&@[#7&R]:&@1-&!@[#6&R]1:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@1):&@[#7,#6;R]:&@[#6&R]:&@[#6,#7;R]:&@[#6&R]:&@2)-&!@[*&!R]",
+     "cluster_method": "complete",
+     "cluster_cutoff": 2.0,
+     "cluster_criterion": "distance",
+     "working_dir": "."
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"reactant_def": "primary_secondary_amines/amination-1.smi", 
+	"bb_from": "/compounds.smi",
+	"logging_path": "clustering.log", 
+	"run_type": "xreact_clustering", 
+	"rep": "least_num_atoms", 
+	"cutoff": 0.8, 
+	"db_path": "/path/database/xreact_reactions",
+	"jobType": "xreact_clustering"}

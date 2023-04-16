@@ -1,0 +1,10 @@
+{"run_type": "intra_molecule_rmsd_clustering",
+ "parameters":
+    {
+     "protein_ligand_conf_csv": "protein_ligand_conf.csv",
+     "cluster_method": "complete",
+     "cluster_cutoff": 2.0,
+     "cluster_criterion": "distance",
+     "working_dir": "."
+    }
+}

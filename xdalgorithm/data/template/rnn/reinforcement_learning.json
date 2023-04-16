@@ -1,0 +1,98 @@
+{
+  "version": "2.0",
+	"run_type": "reinforcement_learning",
+	"parameters": {
+		"scoring_function": {
+			"name": "custom_sum",
+			"parallel": true,
+			"parameters": [
+				{
+					"component_type": "tpsa",
+					"name": "TPSA",
+					"weight": 1,
+					"model_path": null,
+					"smiles": [],
+					"specific_parameters": {
+						"transformation_type": "double_sigmoid",
+						"high": 140,
+						"low": 0,
+						"coef_div": 140,
+						"coef_si": 20,
+						"coef_se": 20,
+						"transformation": true
+					}
+				},
+				{
+					"component_type": "num_rotatable_bonds",
+					"name": "Number of rotatable bonds",
+					"weight": 2,
+					"model_path": null,
+					"smiles": [],
+					"specific_parameters": {
+						"transformation_type": "step",
+						"high": 8,
+						"low": 3,
+						"transformation": true
+					}
+				},
+				{
+					"component_type": "num_hbd_lipinski",
+					"name": "HB-donors (Lipinski)",
+					"weight": 2,
+					"model_path": null,
+					"smiles": [],
+					"specific_parameters": {
+						"transformation_type": "step",
+						"high": 5,
+						"low": 1,
+						"transformation": true
+					}
+				},
+				{
+					"component_type": "num_rings",
+					"name": "Number of rings",
+					"weight": 2,
+					"model_path": null,
+					"smiles": [],
+					"specific_parameters": {
+						"transformation_type": "step",
+						"high": 7,
+						"low": 2,
+						"transformation": true
+					}
+				}
+			]
+		},
+		"diversity_filter": {
+			"name": "IdenticalMurckoScaffold",
+			"nbmax": 32,
+			"minscore": 0.55,
+			"minsimilarity": 0.5
+		},
+		"reinforcement_learning": {
+			"prior": "model.ckpt.pri",
+			"agent": "model.ckpt.agent",
+			"n_steps": 10,
+			"sigma": 128,
+			"learning_rate": 0.0001,
+			"batch_size": 64,
+			"reset": 0,
+			"reset_score_cutoff": 0.5,
+			"margin_threshold": 50
+		},
+		"inception": {
+			"smiles": [],
+			"memory_size": 512,
+			"sample_size": 256
+		}
+	},
+	"logging": {
+		"sender": "this is relevant for remote job submission scenario",
+		"recipient": "local",
+		"logging_frequency": 4,
+		"logging_path": "progress.log",
+		"resultdir": "./results/directory",
+		"job_name": "Reinforcement learning",
+		"job_id": "relevant for remote logging"
+	}
+}

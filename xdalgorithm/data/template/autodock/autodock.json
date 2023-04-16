@@ -1,0 +1,8 @@
+{"parameters":
+    {
+     "protein_conf_csv": "protein_conf_grids.csv",
+     "ligand_conf_csv": "3d_prepared.csv",
+     "num_docking_runs": 10,
+     "working_dir": "."
+    }
+}

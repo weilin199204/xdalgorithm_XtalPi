@@ -1,0 +1,16 @@
+{"parameters":
+    {
+     "protein_pdb_file_name": "xxxx.pdb",
+     "alignment_option": "all",
+     "keep_water": "none",
+     "fill_ter_residue": false,
+     "cap_residue": false,
+     "long_loop": 5,
+     "patch_ter": false,
+     "num_models": 1,
+     "removed_chain_id_list": null,
+     "kept_ligand_resname_list": null,
+     "reference_pdb_file_name_for_alignment": null,
+     "working_dir": "."
+    }
+}

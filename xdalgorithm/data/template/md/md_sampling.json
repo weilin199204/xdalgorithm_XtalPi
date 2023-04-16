@@ -1,0 +1,70 @@
+{
+  "version": "0.1",
+  "run_type": "md_sampling",
+  "parameters":
+    {
+      "unsolvated_prmtop_file_name": "/the/prmtop/file.prmtop",
+      "unsolvated_inpcrd_file_name": "/the/inpcrd/file.inpcrd",
+      "solvated_prmtop_file_name": "/the/prmtop/file.prmtop",
+      "solvated_inpcrd_file_name": "/the/inpcrd/file.inpcrd",
+      "ligand_resnames": ["MOL"],
+      "n_parallel_MD": 6,
+      "n_gpu": 6,
+      "platform_name": "CUDA",
+      "platform_property":
+          {
+            "Precision": "mixed",
+            "DisablePmeStream": "true"
+          },
+      "gen_temperature": 0.15,
+      "temperature": 298.15,
+      "pcouple": true,
+      "p_ref": 1.0,
+      "p_type": "isotropic",
+      "p_scale":
+        [true, true, true],
+      "p_xy_mode": null,
+      "p_z_mode": null,
+      "p_tens": 0.0,
+      "p_freq": 25,
+      "fric_coeff": 1.0,
+      "mini_nstep": 1000000,
+      "mini_tol": 1.0,
+      "dt": 0.004,
+      "n_step_heating": 50000,
+      "n_step_NVT_eq": 250000,
+      "n_step_NPT_eq": 5000000,
+      "n_step_prod": 50000000,
+      "n_step_dcd_heating": 2500,
+      "n_step_dcd_NVT_eq": 2500,
+      "n_step_dcd_NPT_eq": 2500,
+      "n_step_dcd_prod": 2500,
+      "nonbonded_method": "LJPME",
+      "nonbonded_cutoff": 1.2,
+      "switch_distance": 0.0,
+      "constraints": "HBonds",
+      "restraints_selection_string": "auto",
+      "restraints_force_constant": 100.0,
+      "rigid_water": true,
+      "implicit_solvent": null,
+      "implicit_solvent_kappa": null,
+      "implicit_solvent_salt_conc": 0.0,
+      "solute_dielectric": 1.0,
+      "solvent_dielectric": 78.5,
+      "use_SASA": false,
+      "remove_CM_motion": true,
+      "use_HMR": true,
+      "hydrogen_mass": 3.024,
+      "ewald_error_tolerance": 0.0005,
+      "flexible_constraints": true,
+      "verbose": false,
+      "split_dihedrals": false
+    },
+  "logging":
+    {
+      "sender": "this is relevant for remote job submission scenario",
+      "recipient": "local",
+      "logging_path": "./md_sampling.log",
+      "job_name": "md_sampling"
+    }
+}

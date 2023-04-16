@@ -1,0 +1,15 @@
+[C&H3]C(-,:Cc1ccc(-,:O)cc1)NCC(-,:O)c1cc(-,:O)cc(-,:O)c1
+[C&H3]C(-,:[C&H3])NC1C=c2c(-,:C=C1Nc1ccc(-,:Cl)cc1)nc1ccccc1n2c1ccc(-,:[C&H3])cc1
+[C&H3]C(-,:[C&H3])CCCC(-,:[C&H3])C1CCC2C1(-,:[C&H3])CCC/C2=C\C=C1/CC(-,:O)CCC1[C&H3]
+[C&H3]-c1c(-,:[C&H3])c(-,:[C&H3])c2OC(-,:[C&H3])(-,:COc3ccc(-,:CC4SC(=O)NC4=O)cc3)CCc2c1-[C&H3]
+c1c(-,:c(-,:ccc1Oc1c(-,:cc(-,:cc1I)CC(-,:N(-,:[#1])-,:[#1])C(-,:O)=O)I)O)I
+[#7&H2]C(-,:Cc1cc(-,:I)c(-,:Oc2cc(-,:I)c(-,:O)c(-,:I)c2)c(-,:I)c1)C(-,:O)=O
+c1(-,:[C&H3])nnc2CN=C(-,:c3ccccc3Cl)c3cc(-,:Cl)ccc3n12
+[#7][C&H2][C&H2][c&X3]1ccc(-,:O)c(-,:O)c1
+[C&H3]C(-,:[#7&H2])(-,:Cc1ccc(-,:O)c(-,:O)c1)C(-,:O)=O
+[C&H3]C(-,:[C&H3])CCCC(-,:[C&H3])CCCC(-,:[C&H3])CCCC1(-,:[C&H3])CCc2c(-[C&H3])c(-,:O)c(-[C&H3])c(-[C&H3])c2O1
+[#6]N(-,:CCCC#CC(-,:[C&H3])(-,:[C&H3])[C&H3])Cc1cccc2ccccc12
+[C&H3]CC(-,:C(-,:C[C&H3])c1ccc(-,:O)cc1)c1ccc(-,:O)cc1
+[C&H3]OC1C(-,:O[C&H3])C(=O)C(-,:CCCC(-,:[C&H3])CCCC(-,:[C&H3])CO)C(-,:[C&H3])C1=O
+N(-,:[#1])(-,:[#1])C(-,:CO)C(=O)NNCc1ccc(-,:O)c(-,:O)c1O
+[C&H3]N1CCc2cccc3c2C1Cc1ccc(-,:O)c(-,:O)c1-3

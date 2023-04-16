@@ -1,0 +1,20 @@
+{
+  "version": "0.1",
+  "run_type": "md_trajectory_analysis",
+  "parameters":
+    {
+      "work_dir": ".",
+      "n_parallel_MD": 6,
+      "ligand_resnames": ["MOL"],
+      "unsolvated_prmtop_file_name": "/the/prmtop/file.prmtop",
+      "unsolvated_inpcrd_file_name": "/the/inpcrd/file.prmtop",
+      "solvated_prmtop_file_name": "/the/prmtop/file.prmtop"
+    },
+  "logging":
+    {
+      "sender": "this is relevant for remote job submission scenario",
+      "recipient": "local",
+      "logging_path": "./md_trajectory_analysis.log",
+      "job_name": "md_trajectory_analysis"
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "run_type": "core_constraint_docking",
+  "parameters":
+  {
+    "input_ligands": "/ligands_path/ligands.smi",
+    "input_protein": "/protein_path/prepared_protein.pdb",
+    "work_dir": ".",
+    "core": "/path/ligand_core.sdf",
+    "n_cpu": 3,
+    "box_size": 9,
+    "spacing": 0.6,
+    "save_best": true,
+    "rmsd_cutoff": 2.0,
+    "n_poses": 10,
+    "hb": [],
+    "protonation": true
+  },
+  "logging": {
+    "sender": "this is relevant for remote job submission scenario",
+    "recipient": "local",
+    "logging_path": "./core_constraint_docking.log",
+    "job_name": "core_constraint_docking"
+  },
+  "jobType": "core_constraint_docking"
+}

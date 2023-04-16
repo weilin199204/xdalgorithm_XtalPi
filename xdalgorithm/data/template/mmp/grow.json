@@ -1,0 +1,14 @@
+{
+    "logging_path": "/this/is/logging/grow_logging_path",
+    "max_atoms": 2,
+    "max_replacements": null,
+    "min_atoms": 1,
+    "min_freq": 0,
+    "mol": "c1cc(OC)ccc1C",
+    "ncores": 1,
+    "output_smiles_path": "/output/path/grow_output.smi",
+    "protected_ids": null,
+    "radius": 3,
+    "replace_ids": null,
+    "run_type": "mmp_grow"
+}

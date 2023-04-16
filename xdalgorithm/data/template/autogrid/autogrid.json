@@ -1,0 +1,10 @@
+{"parameters":
+    {
+     "protein_conf_csv": "built_protein_models.csv",
+     "kept_ligand_resname_list": null,
+     "target_center": [22.786, 15.473, -11.944],
+     "num_grid_points": [60, 60, 60],
+     "grid_spacing": [0.375, 0.375, 0.375],
+     "working_dir": "."
+    }
+}

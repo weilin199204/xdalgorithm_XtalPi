@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "run_type": "md_system_building",
+  "parameters":
+    {
+      "protein_pdb_file_name": "/protein_path.pdb",
+      "ligand_sdf_file_name": "/ligand_path.sdf",
+      "ligand_resname": "MOL",
+      "water_box_shape": "octahedral",
+      "water_box_edge": 1.0,
+      "ff_format": "AMBER",
+      "protein_prmtop_file_name": "protein.prmtop",
+      "protein_inpcrd_file_name": "protein.inpcrd",
+      "ligand_prmtop_file_name": "ligand.prmtop",
+      "ligand_inpcrd_file_name": "ligand.inpcrd",
+      "system_unsolvated_prmtop_file_name": "system_unsolvated.prmtop",
+      "system_unsolvated_inpcrd_file_name": "system_unsolvated.inpcrd",
+      "system_unsolvated_psf_file_name": "system_unsolvated.psf",
+      "system_unsolvated_pdb_file_name": "system_unsolvated.pdb",
+      "system_unsolvated_top_file_name": "system_unsolvated.top",
+      "system_unsolvated_gro_file_name": "system_unsolvated.gro",
+      "system_solvated_prmtop_file_name": "system_solvated.prmtop",
+      "system_solvated_inpcrd_file_name": "system_solvated.inpcrd",
+      "system_solvated_psf_file_name": "system_solvated.psf",
+      "system_solvated_pdb_file_name": "system_solvated.pdb",
+      "system_solvated_top_file_name": "system_solvated.top",
+      "system_solvated_gro_file_name": "system_solvated.gro"
+    },
+  "logging":
+    {
+      "sender": "this is relevant for remote job submission scenario",
+      "recipient": "local",
+      "logging_path": "./md_system_building.log",
+      "job_name": "md_system_building"
+    }
+}

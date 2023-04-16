@@ -1,0 +1,17 @@
+{
+    "logging": {
+        "logging_path": "/absolute/path/to/log/directory.log"
+    },
+    "parameters": {
+        "affinity_column_name": "activity_column_name",
+        "affinity_data_path":  "/absolute/path/to/dataset.csv",
+        "graphs": [
+            "/absolute/path/of/graph/pickle/file1.pickle",
+            "/absolute/path/of/graph/pickle/file2.pickle"
+        ],
+        "query_index": 1241,
+        "query_substructure": "c1ccccc1",
+        "work_dir": "/absolute/path/to/save/output/in/this/directory"
+    },
+    "run_type": "query_node_in_graphs_by_node_index"
+}

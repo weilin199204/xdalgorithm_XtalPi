@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "run_type": "filtering",
+  "logging": {
+    "sender": "this is relevant for remote job submission scenario",
+    "recipient": "local",
+    "logging_path": "/directory/path/to/save/output/csv/file.log",
+    "job_name": "scoring",
+    "job_id": "relevant for remote logging"
+  },
+  "parameters": {
+    "scoring_function":
+        {"name": "custom_filtering",
+          "parallel": false,
+          "parameters":
+          [
+              {
+                "component_type": "tpsa",
+                "name": "drug_tpsa",
+                "weight": 1,
+                "low_limit": [">",100],
+                "up_limit": ["<",400]
+              },
+              {
+                "component_type": "tanimoto_similarity",
+                "smiles": ["c1ccccc1CC", "c1ccccc1CCC", "c1ccccc1CCCC"],
+                "name": "drug_similarity",
+                "low_limit": [">",0.1]
+              },
+              {
+                "component_type": "molecular_weight",
+                "model_path": null,
+                "smiles": [],
+                "name": "molecular weight",
+                "up_limit": ["<",500]
+              },
+              {
+                "component_type":"pains",
+                "name":"pains",
+                "smiles":[],
+                "specific_parameters":{
+                    "tautomer_query":true
+                    }
+               }
+          ]
+        },
+
+    "scoring": {
+      "input": "/smiles/file/path/to/calculate/properties.smi"
+    }
+  }
+}

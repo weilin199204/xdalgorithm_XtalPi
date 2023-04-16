@@ -1,0 +1,9 @@
+{
+    "parameters": {
+        "csv_file": "/absolute/path/to/dataset.csv",
+        "small_frag_size": 2,
+        "smiles_col": "smiles",
+        "name_col": "mol_name",
+        "value_col": "value_column_name"
+    }
+}

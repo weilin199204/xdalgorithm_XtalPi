@@ -1,0 +1,15 @@
+{
+    "logging": {
+        "logging_path": "/absolute/path/to/log/directory.log"
+    },
+    "parameters": {
+        "affinity_data_path": "/absolute/path/to/dataset.csv",
+        "graphs": [
+            "/absolute/path/of/graph/pickle/file1.pickle",
+            "/absolute/path/of/graph/pickle/file2.pickle"
+        ],
+        "query_substructure": "c1ccccc1",
+        "work_dir": "/absolute/path/to/save/output/in/this/directory"
+    },
+    "run_type": "query_graphs_murcko_scaffold_matching_substructure"
+}

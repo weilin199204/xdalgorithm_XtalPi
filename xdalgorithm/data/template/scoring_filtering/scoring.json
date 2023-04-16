@@ -1,0 +1,148 @@
+{
+  "version": 2,
+  "run_type": "scoring",
+  "logging": {
+    "sender": "this is relevant for remote job submission scenario",
+    "recipient": "local",
+    "logging_path": "/directory/path/to/save/output/csv/file.log",
+    "job_name": "scoring",
+    "job_id": "relevant for remote logging"
+  },
+  "parameters": {
+    "scoring_function": {
+      "name": "custom_filtering",
+      "parallel": false,
+      "parameters": [
+        {
+          "component_type": "tpsa",
+          "model_path": null,
+          "smiles": [],
+          "name": "tpsa",
+          "low_limit": [
+            ">",
+            50
+          ],
+          "up_limit": [
+            "<",
+            90
+          ]
+        },
+        {
+          "component_type": "tanimoto_similarity",
+          "smiles": [
+            "c1ccccc1CC",
+            "c1ccccc1CCC",
+            "c1ccccc1CCCC"
+          ],
+          "name": "Tanimoto Similarity",
+          "low_limit": [
+            ">",
+            0.1
+          ]
+        },
+        {
+          "component_type": "molecular_weight",
+          "model_path": null,
+          "smiles": [],
+          "name": "molecular weight",
+          "up_limit": [
+            "<",
+            500
+          ]
+        },
+        {
+          "component_type": "custom_alerts",
+          "name": "custom_alerts",
+          "smiles": [
+            "c1cccnc1"
+          ]
+        },
+        {
+          "component_type": "qed_score",
+          "name": "QED Score"
+        },
+        {
+          "component_type": "matching_substructure",
+          "name": "Matching substructure",
+          "smiles": [
+            "c1ccccc1CC"
+          ]
+        },
+        {
+          "component_type": "jaccard_distance",
+          "name": "Jaccard dissimilarity",
+          "smiles": [
+            "CCCCCCCCC"
+          ]
+        },
+        {
+          "component_type": "num_rotatable_bonds",
+          "name": "Number of rotatable bonds"
+        },
+        {
+          "component_type": "num_hbd_lipinski",
+          "name": "HB-donors (Lipinski)"
+        },
+        {
+          "component_type": "num_rings",
+          "name": "Number of rings"
+        },
+        {
+          "component_type": "sa_score",
+          "name": "SA Score",
+          "model_path": null
+        },
+        {
+          "component_type": "pains",
+          "name": "pains",
+          "specific_parameters": {
+            "tautomer_query": true
+          }
+        },
+        {
+          "component_type": "ld50_oral",
+          "name": "ld50_oral",
+          "specific_parameters": {
+            "tautomer_query": true
+          }
+        },
+        {
+          "component_type": "nonbiodegradable",
+          "name": "nonbiodegradable",
+          "specific_parameters": {
+            "tautomer_query": true,
+            "accept": 1,
+            "reject": 1
+          }
+        },
+        {
+          "component_type": "acute_aquatic_toxicity",
+          "name": "acute_aquatic_toxicity",
+          "specific_parameters": {
+            "tautomer_query": true
+          }
+        },
+        {
+          "component_type": "aggregators",
+          "name": "aggregators",
+          "specific_parameters": {}
+        },
+        {
+          "component_type": "alphascreen_gst_fhs",
+          "name": "alphascreen_gst_fhs",
+          "specific_parameters": {}
+        },
+        {
+          "component_type": "custom_component",
+          "name": "custom_component",
+          "specific_parameters": {
+            "function": "from rdkit.Chem import Descriptors\ndef calculate_property(m):\n    tpsa_m = Descriptors.TPSA(m)\n    logp_m = Descriptors.MolLogP(m)\n    return tpsa_m+logp_m"
+          }
+        }
+      ]
+    },
+    "scoring": {
+      "input": "/smiles/file/path/to/calculate/properties.smi"
+    }
+  }
+}

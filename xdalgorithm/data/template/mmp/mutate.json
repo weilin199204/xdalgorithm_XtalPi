@@ -1,0 +1,19 @@
+{
+    "logging_path": "/logging/path/mutate_logging_path",
+    "max_inc": 2,
+    "max_rel_size": 10,
+    "max_replacements": null,
+    "max_size": 10,
+    "min_freq": 0,
+    "min_inc": -2,
+    "min_rel_size": 0,
+    "min_size": 0,
+    "mol": "c1cc(OC)ccc1C",
+    "ncores": 1,
+    "output_smiles_path": "/output/path/mutate_output.smi",
+    "protected_ids": false,
+    "radius": 3,
+    "replace_cycles": false,
+    "replace_ids": null,
+    "run_type": "mmp_mutate"
+}

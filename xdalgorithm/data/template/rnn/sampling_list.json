@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "run_type": "sampling",
+  "parameters": {
+    "model_path": [
+	    "trained.1.ckpt",
+	    "trained.2.ckpt",
+	    "trained.3.ckpt",
+	    "trained.4.ckpt"
+    	],
+    "output_smiles_path": "/path/to/output/Agent_list.smi",
+    "num_smiles": 2000,
+    "batch_size": 32,
+    "with_likelihood": false
+  },
+  "logging": {
+    "sender": "this is relevant for remote job submission scenario",
+    "recipient": "local",
+    "logging_path": "/sampling/log/path/Agent_list.log",
+    "job_name": "sampling"
+  }
+}

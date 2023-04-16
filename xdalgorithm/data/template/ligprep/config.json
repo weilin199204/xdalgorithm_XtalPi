@@ -1,0 +1,25 @@
+{
+    "run_type": 5,
+    "parameters": {
+        "params2d": {
+            "input_smiles": null,
+            "input_csv": null,
+            "output_csv": null,
+            "smiles_col": "smiles",
+            "molname_col": "mol_name",
+            "process_isomer": "enumerate",
+            "protonation": true
+        },
+        "params3d": {
+            "input_smiles": null,
+            "input_csv": null,
+            "smiles_col": "smiles",
+            "molname_col": "mol_name",
+            "output_dir": ".",
+            "n_cpu": 8,
+            "max_num_conformations_per_isomer": null,
+            "max_attempts": null,
+            "prune_rmsd_threshold": 0.5
+        }
+    }
+}

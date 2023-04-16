@@ -1,0 +1,12 @@
+{
+    "logging": {
+        "logging_path": "/absolute/path/to/log/directory.log"
+    },
+    "parameters": {
+        "aff_col": "activity_column_name",
+        "input_csv": "/absolute/path/to/dataset.csv",
+        "split_fused_ring": false,
+        "work_dir": "/absolute/path/to/save/output/in/this/directory"
+    },
+    "run_type": "create_scaffold_network"
+}

@@ -1,0 +1,8 @@
+{"parameters":
+    {
+     "protein_ligand_conf_csv": "docking_pose_summary.csv",
+     "ligand_resname": "MOL",
+     "include_general_contacts": false,
+     "working_dir": "."
+    }
+}

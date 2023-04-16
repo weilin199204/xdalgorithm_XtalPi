@@ -1,0 +1,114 @@
+123-triazole-1 monosubstituted_alkynes primary_secondary_halides
+123-triazole-2 monosubstituted_alkynes azides
+123-triazole-3 monosubstituted_alkynes primary_secondary_halides
+123-triazole-4 monosubstituted_alkynes azides
+124-triazole-1 aryl_nitriles amidines
+124-triazole-2 nitriles	hydrazides
+124-triazole-3 nitriles	carboxylic_acids
+5-het-amination 2_halo_heterocycles primary_secondary_amines
+5-het-arylation 2_unsubstituted_heterocycles aryl_halides
+BOC-deprotection
+BOC-protection 
+N-azole-arylation aryl_boronates azoles
+acylation-1 monosubstituted_alkynes acid_chlorides
+alkylation-1 primary_secondary_halides primary_secondary_amines
+alkylation-2 primary_secondary_halides heterocycles
+amide_coupling-1 carboxylic_acids primary_secondary_amines
+amide_coupling-2 acid_chlorides primary_secondary_amines
+amide_coupling-3
+amide_coupling-4
+amination-1 aryl_halides primary_secondary_amines
+amination-2 aldehydes_and_ketones primary_secondary_amines
+aminothiophene-1 2-unsubstituted_ketones 2-cyano_esters
+benzimidazole-1 ortho-amino_anilines carboxylic_acids
+benzimidazole-2 ortho-amino_anilines aldehydes
+benzimidazole-3 
+benzimidazole-4 
+benzofuran-1 2-iodo_phenols monosubstituted_alkynes
+benzothiazole-1 2-mercapto_anilines aldehydes
+benzothiophene 2-iodo_thioanisoles monosubstituted_alkynes
+benzoxazole-1 2-amino_phenols carboxylic_acids
+benzoxazole-2 2-amino_phenols aryl_aldehydes
+carbamate isocyanates primary_secondary_alcohols
+carbamate-2 primary_secondary_amines primary_secondary_alcohols
+castro-stephens-1 2-iodo_anilines monosubstituted_alkynes
+castro-stephens-2,sonogashira aryl_vinyl_halides monosubstituted_alkynes
+claisen-1 enolizable_ketones non-enolizable_esters
+claisen-2 enolizable_esters non-enolizable_esters
+conrad-limpach 3-ketoesters anilines
+corey-chaykovsky-1 
+corey-chaykovsky-2 
+coumarin 3-ketoesters phenols
+cyanohydrin
+decarboxylative_coupling-1 aryl_carboxylic_acids aryl_halides
+diyne monosubstituted_alkynes monosubstituted_alkynes
+epoxidation
+erlenmeyer-plochl aldehydes_and_ketones n-acyl_glycines
+ester-hydrolysis-1
+ester-hydrolysis-2
+esterification-1 acid_chlorides alcohols
+esterification-2 carboxylic_acids alcohols
+ether-1 aryl_halides phenols
+ether-2 primary_secondary_halides primary_secondary_aryl_alcohols
+flavone 2-keto_phenols aryl_acid_chlorides
+friedel-crafts-1 Friedel-Crafts_substrates acid_chlorides
+furan-1 3-ketoesters 2-halo_ketones	
+heck aryl_vinyl_halides activated_alkenes
+imidazole-1 2-halo_aldehydes amidines
+imidazole-2 aryl_aldehydes 2-halo_aryl_ketones primary_secondary_amines
+imidazole-3 diaryl_diketones aryl_aldehydes
+indole-1 2-halo_aryl_ketones anilines
+indole-2 aryl_hydrazines 2-unsubstituted_ketones
+isocyanate-1 
+isoxazole-1
+mitsunobu-1 primary_secondary_alcohols phenols
+mitsunobu-2 primary_secondary_alcohols primary_secondary_sulfonamides
+mitsunobu-3 primary_secondary_alcohols tetrazoles-2H
+mitsunobu-4 primary_secondary_alcohols tetrazoles-1H
+miyaura-borylation
+negishi aryl_alkynyl_vinyl_halides aryl_vinyl_halides
+oxadiazole-1 nitriles carboxylic_acids
+oxazole-1 aldehydes cyanohydrins
+oxazole-2 monosubstituted_alkynes acetonitrile_proprionitrile
+phthalazinone 2-acyl_benzoic_acids hydrazines
+pictet-spengler arylethyl_amines aldehydes
+pomeranz-fritsch 
+pyrazole-1 3-keto_ketones hydrazines
+pyridine-1 3-ketoesters 3-ketoesters aldehydes
+pyridine-2 2-halo_ketones unsaturated_ketones
+pyridine-3 3-ketoesters 2-cyano_esters
+pyridone-1 cyanoacetamides 3-keto_ketones
+pyrimidine-1 3-keto_ketones amidines
+pyrimidinedione-1 amino_acrylates isocyanates
+pyrimidinedione-2 2-aminobenzoates isocyanates
+pyrimidone-1 3-ketoesters aldehydes
+pyrimidone-2 3-ketoesters aldehydes
+pyrrole-1 3-ketoesters 3-ketoesters
+pyrrole-2 4-keto_ketones primary_amines
+quinazoline-1 quinazolinones primary_secondary_amines
+quinazolinone-1 2-carboxy_anilines primary_secondary_amines aldehydes
+quinazolinone-2 2-carboxy_anilines primary_amides
+quinoline-1 2-amino_benzaldehydes 2-unsubstituted_ketones
+quinoline-2 2-carboxy_anilines 2-unsubstituted_ketones
+rubottom
+spiro-chromanone o-hydroxyacetophenones cyclohexanones
+stille aryl_vinyl_halides organostannanes
+stille-2 aryl_vinyl_halides organostannanes
+sulfonamide-1 sulfonyl_chlorides primary_secondary_amines
+sulfone-1
+sulfone-2
+sulfoxide
+suzuki aryl_vinyl_halides aryl_vinyl_boronates
+tetrahydroindole-1 cyclohexanones 2-hydroxy_ketones primary_amides
+tetrazole-1 nitriles primary_secondary_halides
+tetrazole-2 nitriles primary_secondary_halides
+tetrazole-3
+thiazole-1 thioamides 2-halo_ketones
+thiazole-2 
+thioether-1 styrenes thiols
+thioether-2 aryl_halides thiols
+thiourea-1 thioisocyanates primary_secondary_amines
+urea-1 isocyanates primary_secondary_amines
+urea-2 primary_secondary_amines primary_secondary_amines
+vinyl-reduction
+yamaguchi
